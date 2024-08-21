@@ -13,3 +13,7 @@ set up repo with readme, git config, and empty project files
 ## Reflections
 
 Your write up will go here
+# S-J-K-F = Sebastian Key: I did Add a double jump and Add an attack action that kills enemies
+
+
+
