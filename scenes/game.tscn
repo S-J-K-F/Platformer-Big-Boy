@@ -1,11 +1,14 @@
-[gd_scene load_steps=16 format=3 uid="uid://brb1ngg7xp37t"]
+[gd_scene load_steps=19 format=3 uid="uid://brb1ngg7xp37t"]
 
 [ext_resource type="PackedScene" uid="uid://b5g08ou2qaw0v" path="res://scenes/bigboy.tscn" id="1_q817h"]
+[ext_resource type="Script" path="res://scrip/game_manager.gd" id="1_ua31b"]
 [ext_resource type="Texture2D" uid="uid://syub1buoedap" path="res://assest/sprites/world_tileset.png" id="2_12muu"]
+[ext_resource type="FontFile" uid="uid://c6t0kfn5e0vs4" path="res://assest/fonts/PixelOperator8-Bold.ttf" id="2_hqmbe"]
 [ext_resource type="PackedScene" uid="uid://cir8a2cb3mjk8" path="res://scenes/platy.tscn" id="3_pwvno"]
 [ext_resource type="PackedScene" uid="uid://e830bvoy7ec3" path="res://scenes/coin.tscn" id="4_vab7r"]
 [ext_resource type="PackedScene" uid="uid://cytl1odtqf1cf" path="res://scenes/killzone.tscn" id="5_2kr8q"]
 [ext_resource type="PackedScene" uid="uid://ve6pl231jdex" path="res://scenes/slime.tscn" id="6_mt37m"]
+[ext_resource type="FontFile" uid="uid://v87ix2pi2wql" path="res://assest/fonts/PixelOperator8.ttf" id="7_jgi8d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_677di"]
 texture = ExtResource("2_12muu")
@@ -251,6 +254,21 @@ _data = {
 
 [node name="Game" type="Node2D"]
 
+[node name="GameManager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("1_ua31b")
+
+[node name="ScoreLabel" type="Label" parent="GameManager"]
+offset_left = -431.0
+offset_top = -192.0
+offset_right = -331.0
+offset_bottom = -143.0
+theme_override_colors/font_color = Color(0, 0.470588, 0.866667, 1)
+theme_override_fonts/font = ExtResource("2_hqmbe")
+theme_override_font_sizes/font_size = 8
+text = "You've eaten X onion rings!"
+autowrap_mode = 2
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_sxs30")
 format = 2
@@ -315,8 +333,43 @@ position = Vector2(280, 56)
 [node name="Coin6" parent="Coins" instance=ExtResource("4_vab7r")]
 position = Vector2(-232, 25)
 
-[node name="Slime" parent="." instance=ExtResource("6_mt37m")]
+[node name="Enemy" type="Node" parent="."]
+
+[node name="Slime" parent="Enemy" instance=ExtResource("6_mt37m")]
 position = Vector2(180, -44)
 
-[node name="Slime2" parent="." instance=ExtResource("6_mt37m")]
+[node name="Slime2" parent="Enemy" instance=ExtResource("6_mt37m")]
 position = Vector2(-119, -44)
+
+[node name="Labels" type="Node" parent="."]
+
+[node name="Label4" type="Label" parent="Labels"]
+offset_left = -414.0
+offset_top = -210.0
+offset_right = -314.0
+offset_bottom = -161.0
+theme_override_colors/font_color = Color(0, 0.470588, 0.866667, 1)
+theme_override_fonts/font = ExtResource("7_jgi8d")
+theme_override_font_sizes/font_size = 8
+text = "Great Job!"
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="Labels"]
+offset_left = 124.0
+offset_top = -95.0
+offset_right = 270.0
+offset_bottom = -46.0
+theme_override_colors/font_color = Color(0, 0.470588, 0.866667, 1)
+theme_override_fonts/font = ExtResource("7_jgi8d")
+theme_override_font_sizes/font_size = 8
+text = "Watch out for bad guys!"
+
+[node name="Label" type="Label" parent="Labels"]
+offset_left = 65.0
+offset_top = 5.0
+offset_right = 184.0
+offset_bottom = 54.0
+theme_override_colors/font_color = Color(0, 0.470588, 0.866667, 1)
+theme_override_fonts/font = ExtResource("7_jgi8d")
+theme_override_font_sizes/font_size = 8
+text = "Space/W/UP to Jump"
