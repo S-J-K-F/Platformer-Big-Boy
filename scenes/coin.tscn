@@ -101,7 +101,6 @@ radius = 5.0
 
 [sub_resource type="Animation" id="Animation_k58ad"]
 resource_name = "Eat"
-step = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
