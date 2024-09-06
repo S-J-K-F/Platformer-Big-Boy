@@ -18,6 +18,7 @@ func _physics_process(delta):
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and Jumps_Left > 0:
 		velocity.y = JUMP_VELOCITY
+		Jumps_Left = Jumps_Left - 1
 
 	# Get the input direction -1, 0, 1.
 	var direction = Input.get_axis("move_left", "move_right")
