@@ -33,8 +33,10 @@ func _physics_process(delta):
 	if is_on_floor():
 		if direction == 0:
 			animated_sprite.play("idleing")
+			Jumps_Left = + 1
 		else:
 			animated_sprite.play("Running")
+			Jumps_Left = + 1
 	else:
 		animated_sprite.play("Jumping")
 	
