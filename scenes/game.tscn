@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=19 format=3 uid="uid://brb1ngg7xp37t"]
+=======
+[gd_scene load_steps=26 format=3 uid="uid://brb1ngg7xp37t"]
+>>>>>>> main
 
 [ext_resource type="PackedScene" uid="uid://b5g08ou2qaw0v" path="res://scenes/bigboy.tscn" id="1_q817h"]
 [ext_resource type="Script" path="res://scrip/game_manager.gd" id="1_ua31b"]
@@ -6,9 +10,16 @@
 [ext_resource type="FontFile" uid="uid://c6t0kfn5e0vs4" path="res://assest/fonts/PixelOperator8-Bold.ttf" id="2_hqmbe"]
 [ext_resource type="PackedScene" uid="uid://cir8a2cb3mjk8" path="res://scenes/platy.tscn" id="3_pwvno"]
 [ext_resource type="PackedScene" uid="uid://e830bvoy7ec3" path="res://scenes/coin.tscn" id="4_vab7r"]
+<<<<<<< HEAD
 [ext_resource type="PackedScene" path="res://scenes/killzone.tscn" id="5_2kr8q"]
 [ext_resource type="PackedScene" path="res://scenes/slime.tscn" id="6_mt37m"]
 [ext_resource type="FontFile" uid="uid://v87ix2pi2wql" path="res://assest/fonts/PixelOperator8.ttf" id="7_jgi8d"]
+=======
+[ext_resource type="PackedScene" uid="uid://cytl1odtqf1cf" path="res://scenes/killzone.tscn" id="5_2kr8q"]
+[ext_resource type="PackedScene" uid="uid://ve6pl231jdex" path="res://scenes/slime.tscn" id="6_mt37m"]
+[ext_resource type="FontFile" uid="uid://v87ix2pi2wql" path="res://assest/fonts/PixelOperator8.ttf" id="7_jgi8d"]
+[ext_resource type="PackedScene" uid="uid://cwmgaaetp6gfd" path="res://scenes/flyslime.tscn" id="10_wwskt"]
+>>>>>>> main
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_677di"]
 texture = ExtResource("2_12muu")
@@ -490,6 +501,83 @@ _data = {
 "RESET": SubResource("Animation_peuwj")
 }
 
+<<<<<<< HEAD
+=======
+[sub_resource type="Animation" id="Animation_imqb2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-657, -2)]
+}
+
+[sub_resource type="Animation" id="Animation_acjbe"]
+resource_name = "move"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-657, -2), Vector2(-657, 68)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lxwmb"]
+_data = {
+"RESET": SubResource("Animation_imqb2"),
+"move": SubResource("Animation_acjbe")
+}
+
+[sub_resource type="Animation" id="Animation_74f22"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(385, -16)]
+}
+
+[sub_resource type="Animation" id="Animation_qbmiu"]
+resource_name = "move"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(385, -16), Vector2(340, -16)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hw6di"]
+_data = {
+"RESET": SubResource("Animation_74f22"),
+"move": SubResource("Animation_qbmiu")
+}
+
+>>>>>>> main
 [node name="Game" type="Node2D"]
 
 [node name="GameManager" type="Node" parent="."]
@@ -516,7 +604,11 @@ layer_1/name = "Mid"
 layer_1/tile_data = PackedInt32Array(131072, 0, 0, 131073, 0, 0, 131074, 0, 0, 262143, 0, 0, 327679, 0, 1, 393214, 0, 0, 393215, 0, 1, 327681, 0, 1, 262145, 65536, 1, 262144, 0, 1, 327680, 0, 1, 327684, 0, 0, 327683, 0, 1, 262147, 0, 1, 262146, 0, 1, 327682, 0, 1, 196610, 0, 1, 196609, 0, 1, 196608, 0, 1, 196611, 0, 0, 131077, 0, 0, 131080, 0, 0, 131083, 0, 0, -196605, 65536, 0, -196604, 0, 1, -196603, 0, 1, -196602, 0, 0, -262141, 0, 0, -262140, 0, 0, -262139, 0, 0, -196606, 0, 0, -131070, 0, 1, -131069, 0, 1, -131068, 65536, 1, -131067, 0, 1, -131066, 0, 1, -131065, 589824, 0, -131064, 655360, 0, -131063, 720896, 0, -131062, 589824, 0, -131061, 655360, 0, -131060, 720896, 0, -131059, 589824, 1, -131058, 655360, 1, -131057, 720896, 1, -131056, 131072, 0, -131055, 196608, 0, -131054, 131072, 1, -131053, 131072, 1, -196590, 131072, 0, -196589, 131072, 0, -65520, 131072, 1, -65519, 131072, 1, -65518, 196608, 1, -65517, 131072, 1, -65537, 589824, 0, -131072, 655360, 0, -131071, 720896, 0, -65540, 589824, 0, -65539, 655360, 0, -65538, 720896, 0, -65543, 589824, 2, -65542, 655360, 2, -65541, 720896, 2, -65546, 589824, 2, -65545, 655360, 2, -65544, 720896, 2, -65547, 262144, 0, -11, 262144, 1, -12, 262144, 1, -13, 262144, 1, -14, 327680, 1, -15, 262144, 1, -65551, 262144, 1, -65550, 262144, 1, -65549, 262144, 1, -65548, 327680, 0, -131087, 262144, 0, -131086, 262144, 0, -131085, 262144, 0, -131084, 262144, 0, -458748, 0, 3, -393212, 0, 4, -327676, 0, 5, -327694, 327680, 3, -262158, 327680, 4, -196622, 327680, 5, 131086, 0, 0, 131091, 0, 0, -196591, 131072, 0, 262161, 0, 0, -262126, 65536, 7, 196607, 65536, 6, -262138, 65536, 6, -196620, 262144, 8, 262126, 0, 1, 262125, 0, 0, 262124, 0, 0, 262123, 0, 0, 262122, 0, 0, 262121, 0, 0, 262120, 0, 0, 262119, 0, 0, 262118, 0, 0, 262117, 0, 0, 262116, 0, 0, 262115, 0, 0, 196579, 0, 0, 196578, 0, 0, 196577, 0, 0, 196576, 0, 1, 131040, 0, 0, 131039, 0, 1, 131038, 0, 1, 131037, 0, 0, 131036, 0, 1, 131035, 0, 1, 131034, 0, 0, 131033, 0, 0, 65500, 0, 1, 65499, 0, 1, -37, 0, 1, -65573, 0, 0, -65572, 0, 0, -36, 0, 1, 65502, 0, 0, 65503, 0, 0, 327651, 0, 1, 327652, 0, 1, 327653, 0, 1, 327654, 0, 1, 327655, 0, 1, 327656, 0, 1, 327657, 0, 1, 327658, 65536, 0, 327659, 0, 1, 327660, 0, 1, 327661, 0, 1, 327662, 0, 1, 393198, 0, 1, 393197, 0, 1, 393196, 0, 1, 393195, 0, 1, 393194, 0, 1, 393193, 0, 1, 393192, 65536, 0, 393191, 0, 1, 393190, 0, 1, 393189, 0, 1, 393188, 65536, 0, 393187, 0, 1, 393186, 0, 1, 393185, 0, 1, 393184, 0, 1, 393183, 0, 1, 393182, 0, 1, 393180, 0, 1, 393179, 0, 1, 393178, 0, 1, 393177, 0, 1, 327641, 0, 1, 262105, 0, 1, 196569, 0, 1, 196570, 0, 1, 196571, 0, 1, 262107, 0, 1, 262106, 0, 1, 327642, 65536, 1, 327643, 0, 1, 327644, 0, 1, 262108, 65536, 0, 196572, 0, 1, 196573, 0, 1, 196574, 0, 1, 262110, 0, 1, 262109, 0, 1, 327645, 0, 1, 327646, 0, 1, 327647, 0, 1, 262111, 65536, 1, 196575, 0, 1, 262112, 0, 1, 262113, 0, 1, 262114, 0, 1, 327650, 0, 1, 327649, 65536, 1, 327648, 0, 1, 458734, 0, 1, 458733, 0, 1, 458732, 0, 1, 458731, 0, 1, 458726, 0, 1, 458725, 0, 1, 458724, 0, 1, 458723, 0, 1, 458722, 0, 1, 458721, 0, 1, 458720, 0, 1, 458719, 0, 1, 458718, 0, 1, 458717, 0, 1, 458716, 0, 1, 458715, 0, 1, 458714, 0, 1, 458713, 0, 1, 458727, 0, 1, 458728, 0, 1, 458729, 0, 1, 458730, 0, 1, 393181, 65536, 0, 458705, 0, 1, 458704, 0, 1, 458703, 65536, 1, 458702, 0, 1, 458701, 0, 1, 458700, 0, 1, 458699, 0, 1, 458698, 0, 1, 327626, 0, 0, 327627, 0, 0, 327628, 0, 1, 327629, 0, 1, 327630, 0, 1, 327631, 0, 1, 327632, 0, 0, 327633, 0, 0, 393169, 0, 1, 393168, 0, 1, 393167, 0, 1, 262095, 0, 0, 262094, 0, 0, 262093, 0, 0, 262092, 0, 0, 393166, 0, 1, 393165, 0, 1, 393164, 65536, 0, 393163, 0, 1, 393162, 0, 1, 196590, 0, 0, 327634, 0, 0, 393170, 0, 1, 458706, 0, 1, 458707, 0, 1, 458708, 0, 1, 393171, 0, 0, 393172, 0, 0, 131047, 196608, 7, 196583, 196608, 8, -25, 196608, 7, 65511, 196608, 8, -131097, 196608, 7, -65561, 196608, 8, -262169, 131072, 4, 131042, 65536, 6, 196587, 65536, 5, 65497, 65536, 5, -33, 65536, 6, 196557, 524288, 3)
 
 [node name="BIGBOY" parent="." instance=ExtResource("1_q817h")]
+<<<<<<< HEAD
 position = Vector2(-267, 9)
+=======
+position = Vector2(26, 29)
+>>>>>>> main
 
 [node name="Camera2D" type="Camera2D" parent="BIGBOY"]
 position = Vector2(0, -6)
@@ -620,3 +712,24 @@ theme_override_colors/font_color = Color(0, 0.180392, 0.866667, 1)
 theme_override_fonts/font = ExtResource("7_jgi8d")
 theme_override_font_sizes/font_size = 8
 text = "Space/W/UP to Jump"
+<<<<<<< HEAD
+=======
+
+[node name="FlySlime" parent="." instance=ExtResource("10_wwskt")]
+position = Vector2(-657, -2)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="FlySlime"]
+libraries = {
+"": SubResource("AnimationLibrary_lxwmb")
+}
+autoplay = "move"
+
+[node name="FlySlime2" parent="." instance=ExtResource("10_wwskt")]
+position = Vector2(385, -16)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="FlySlime2"]
+libraries = {
+"": SubResource("AnimationLibrary_hw6di")
+}
+autoplay = "move"
+>>>>>>> main
