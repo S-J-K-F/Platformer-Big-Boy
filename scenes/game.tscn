@@ -1,8 +1,12 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 [gd_scene load_steps=19 format=3 uid="uid://brb1ngg7xp37t"]
 =======
 [gd_scene load_steps=26 format=3 uid="uid://brb1ngg7xp37t"]
 >>>>>>> main
+=======
+[gd_scene load_steps=26 format=3 uid="uid://y0wkeileh32h"]
+>>>>>>> Stashed changes
 
 [ext_resource type="PackedScene" uid="uid://b5g08ou2qaw0v" path="res://scenes/bigboy.tscn" id="1_q817h"]
 [ext_resource type="Script" path="res://scrip/game_manager.gd" id="1_ua31b"]
