@@ -36,6 +36,7 @@ func _physics_process(delta):
 			Jumps_Left = + 1
 		else:
 			animated_sprite.play("Running")
+			Jumps_Left = + 1
 	else:
 		animated_sprite.play("Jumping")
 	
