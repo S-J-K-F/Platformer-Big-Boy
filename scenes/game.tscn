@@ -706,7 +706,7 @@ libraries = {
 }
 autoplay = "move"
 
-[node name="TileMap2" type="TileMap" parent="."]
+[node name="TileMap" type="TileMap" parent="."]
 position = Vector2(1, -1)
 tile_set = SubResource("TileSet_h5u4y")
 format = 2
