@@ -1,6 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://cqdiwb7qn44j7"]
-
-[ext_resource type="Script" path="res://TitleScreen.gd" id="1_k1rst"]
+[gd_scene load_steps=2 format=3 uid="uid://cqdiwb7qn44j7"]
 
 [sub_resource type="Theme" id="Theme_28h0w"]
 
@@ -11,14 +9,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_k1rst")
 
 [node name="StartButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 508.0
-offset_top = 428.0
-offset_right = 701.0
-offset_bottom = 491.0
+offset_left = 484.0
+offset_top = 407.0
+offset_right = 677.0
+offset_bottom = 470.0
 theme = SubResource("Theme_28h0w")
 text = "PLAY!!!"
 
