@@ -14,6 +14,7 @@ config/name="Platformer"
 run/main_scene="res://scenes/title_screen.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+<<<<<<<Updatedupstreamrun/main_scene="res://scenes/game.tscn"
 
 [autoload]
 
