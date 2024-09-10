@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://cs5ga6ae01pdh"]
+[gd_scene load_steps=3 format=3 uid="uid://cs5ga6ae01pdh"]
 
 [ext_resource type="Script" path="res://scrip/TitleScreen.gd" id="1_80t2a"]
-[ext_resource type="Script" path="res://scenes/TitleScreen.gd" id="2_3nq17"]
 
 [sub_resource type="Theme" id="Theme_28h0w"]
 
@@ -22,6 +21,5 @@ offset_right = 663.0
 offset_bottom = 277.0
 theme = SubResource("Theme_28h0w")
 text = "PLAY!!!"
-script = ExtResource("2_3nq17")
 
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
