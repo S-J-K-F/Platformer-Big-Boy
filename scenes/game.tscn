@@ -687,10 +687,10 @@ theme_override_font_sizes/font_size = 8
 text = "Watch out for bad guys!"
 
 [node name="Label" type="Label" parent="Labels"]
-offset_left = 65.0
-offset_top = 5.0
-offset_right = 184.0
-offset_bottom = 54.0
+offset_left = 80.0
+offset_top = 9.0
+offset_right = 199.0
+offset_bottom = 58.0
 theme_override_colors/font_color = Color(0, 0.180392, 0.866667, 1)
 theme_override_fonts/font = ExtResource("7_jgi8d")
 theme_override_font_sizes/font_size = 8
