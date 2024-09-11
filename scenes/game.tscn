@@ -568,7 +568,7 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4frjd"]
 size = Vector2(14, 14)
 
-[node name="Game" type="Node2D"]
+[node name="Level_1" type="Node2D"]
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
