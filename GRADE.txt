@@ -1,0 +1,27 @@
+Team Points:
+  20/20 points for a working platformer with a filled out README
+  17/20 points for having enough sizable changes (4 changes if in a group of 1, 5 changes if in a group of 2, 6 changes if in a group of 3, 8 changes if in a group of 4)
+  -I'm struggling to test all of these because of the issues you guys faced, but I'll give you some leeway on this one.
+  8/10 points for following the PR process correctly, including reviewing your teammates’ code (not required for solo projects, instead points will come from having enough changes)
+  -more code reviews
+
+45/50
+
+Individual Points:
+  10 points for contributing features to your game (no hard carries)
+  -10/10 Sebastian
+  -10/10 Brendan
+  -8/10 Jackson - Sorry the sprites took so long
+  -10/10 Jameson
+  5 points for thoughtful reflection added in the README
+  -4/5 Sebastian
+  -4/5 Brendan
+  -4/5 Jackson
+  -4/5 Jameson
+  - Would have just liked to see a little more reflection and not just notes of what was done.
+  5 points for contributing to code reviews in PR’s (not required for solo projects, instead points will come from your reflection)
+  -5/5 Sebastian
+  -4/5 Brendan
+  -4/5 Jackson
+  -0/5 Jameson
+  -I'd like to see more notes in code reviews, but nbd for this project.
